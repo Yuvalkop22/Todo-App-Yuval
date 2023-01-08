@@ -11,8 +11,8 @@ export default function ToDoList(props) {
         props.setActiveTodos(props.activeTodos+1);
     }
     const clearAllCompleted = () => {
-        props.setTodos(props.todos.filter((todo)=> todo.isComplete !== true))
-        props.setCompletedTodos(0)
+        props.setTodos(props.todos.filter((todo)=> todo.isComplete !== true));
+        props.setCompletedTodos(0);
     }
     return (
     <div>
