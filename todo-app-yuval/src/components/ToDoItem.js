@@ -20,19 +20,19 @@ export default function ToDoItem(props) {
         if (props.todo.isComplete === false){
             props.setActiveTodos(props.activeTodos+1);
             props.setCompletedTodos(props.completedTodos-1)
-            let label = document.querySelector('label');
+            let label = document.getElementById(props.id);
             label.setAttribute('style','text-decoration: none')
         }else{
             props.setCompletedTodos(props.completedTodos+1);
             props.setActiveTodos(props.activeTodos-1);
-            let label = document.querySelector('label');
+            let label = document.getElementById(props.id);
             label.setAttribute('style','text-decoration: line-through;')
         }
     }
   return (
     <div>
       <input type="checkbox" onChange={changeActivation}/>
-      <label>{props.todo.content}</label>
+      <label id={props.id}>{props.todo.content}</label>
       <button onClick={deleteToDo}>Delete to do</button>
     </div>
   )
