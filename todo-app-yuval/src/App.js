@@ -4,6 +4,7 @@ const App = () => {
   const [todoValue,setTodoValue] = useState("");
   const [todos,setTodos] = useState([]);
   const [activeTodos,setActiveTodos] = useState(0);
+  const [completedTodos,setCompletedTodos] = useState(0);
   return(
     <div>
       <TodoList 
@@ -13,6 +14,8 @@ const App = () => {
         setTodos={setTodos}
         activeTodos={activeTodos}
         setActiveTodos={setActiveTodos}
+        completedTodos={completedTodos}
+        setCompletedTodos={setCompletedTodos}
         />  
     </div>
   )
