@@ -20,7 +20,7 @@ export default function Input(props) {
             placeholder="Create a new todo..." 
             onChange={(e)=>props.setTodoValue(e.target.value)}/>
         <button
-            className="btnTodo"
+            className={`btnTodo-${props.mode}`}
             onClick={AddToDo}>Add todo</button>
       </div>
   )

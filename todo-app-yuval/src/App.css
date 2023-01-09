@@ -53,8 +53,14 @@
     border-radius: 5%;
     border: 2px solid darkblue;
 }
-.btnTodo{
+.btnTodo-light{
     margin-left:1em;
+    background-color: lightskyblue;
+}
+.btnTodo-dark{
+    margin-left:1em;
+    background-color: darkblue;
+    color:white;
 }
 .todosList{
     margin-top: 3%;
