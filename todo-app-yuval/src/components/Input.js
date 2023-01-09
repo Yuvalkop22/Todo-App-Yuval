@@ -2,6 +2,8 @@ import React from 'react'
 import '../App.css';
 export default function Input(props) {
     const AddToDo = () => {
+        if (props.todoValue <= 0)
+            return;
         const newToDo = {
             content: props.todoValue,
             isComplete: false,
