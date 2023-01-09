@@ -1,5 +1,6 @@
 import {React} from 'react'
 import TodoItem from './ToDoItem';
+import '../App.css';
 export default function ToDoList(props) {
     const AddToDo = () => {
         const newToDo = {
@@ -16,10 +17,12 @@ export default function ToDoList(props) {
     }
     return (
     <div>
+      <div className="inputDiv">
         <input type="text" 
             placeholder="Create a new todo..." 
             onChange={(e)=>props.setTodoValue(e.target.value)}/>
         <button onClick={AddToDo}>Add todo</button>
+      </div>
       {
         props.todos.map((todo)=>
             <TodoItem todos={props.todos} 

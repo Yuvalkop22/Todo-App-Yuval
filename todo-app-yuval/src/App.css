@@ -1,0 +1,28 @@
+.mainDiv{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+.header{
+    text-align: left;
+    direction: ltr;
+    padding: 1%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: -8px;
+    background-color: lightskyblue;
+}
+.headerText{
+    margin-left: 10%;
+}
+.inputDiv{
+    margin-top: 5%;
+    text-align: left;
+}
+input{
+    border-radius: 5%;
+    border: 2px solid lightblue;
+}
