@@ -30,10 +30,10 @@ export default function ToDoItem(props) {
         }
     }
   return (
-    <div>
+    <div className={`todoItem-${props.mode}`}>
       <input type="checkbox" onChange={changeActivation}/>
       <label id={props.id}>{props.todo.content}</label>
-      <button onClick={deleteToDo}>Delete to do</button>
+      <button className={`btnDelete-${props.mode}`} onClick={deleteToDo}>Delete</button>
     </div>
   )
 }

@@ -6,23 +6,111 @@
     margin-top: 10%;
     margin-left: 40%;
 }
-.header{
+.header-light{
     text-align: left;
     direction: ltr;
+    display: flex;
     padding: 1%;
     padding-right: 0px;
     padding-left: 0px;
     margin: -8px;
     background-color: lightskyblue;
 }
-.headerText{
+.header-dark{
+    text-align: left;
+    direction: ltr;
+    display: flex;
+    padding: 1%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: -8px;
+    background-color: darkblue;
+}
+.headerText-light{
     margin-left: 10%;
+}
+.headerText-dark{
+    margin-left: 10%;
+    color: white;
+}
+.toggleBtn{
+    border: 50%;
+    width: fit-content;
+    height: 2em;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 2%;
 }
 .inputDiv{
     margin-top: 5%;
-    text-align: left;
+    text-align: center;
 }
-input{
+.inputField-light{
     border-radius: 5%;
     border: 2px solid lightblue;
+}
+.inputField-dark{
+    border-radius: 5%;
+    border: 2px solid darkblue;
+}
+.btnTodo{
+    margin-left:1em;
+}
+.todosList{
+    margin-top: 3%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+.todoItem-light{
+    border: 1px solid black;
+    width: 30%;
+    display: flex;
+    background-color: white;
+    height: fit-content;
+    padding: 1%;
+    padding-right: 15%;
+    text-align: left;
+}
+.todoItem-dark{
+    border: 1px solid black;
+    width: 30%;
+    display: flex;
+    background-color: darkblue;
+    height: fit-content;
+    color: white;
+    padding: 1%;
+    padding-right: 15%;
+    text-align: left;
+}
+.btnDelete-light{
+    background-color: lightskyblue;
+    margin-left: 5px;
+}
+.btnDelete-dark{
+    background-color: white;
+    margin-left: 5px;
+}
+.infoDiv-light{
+    text-align: center;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35%;
+}
+.infoDiv-dark{
+    text-align: center;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35%;
+    background-color: darkblue;
+    color: white;
+}
+
+.btnClearAll-light{
+    background-color: lightskyblue;
 }
