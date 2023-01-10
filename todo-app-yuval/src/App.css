@@ -24,7 +24,7 @@
     padding-right: 0px;
     padding-left: 0px;
     margin: -8px;
-    background-color: darkblue;
+    background-color: lightsalmon;
 }
 .headerText-light{
     margin-left: 10%;
@@ -51,7 +51,7 @@
 }
 .inputField-dark{
     border-radius: 5%;
-    border: 2px solid darkblue;
+    border: 2px solid lightsalmon;
 }
 .btnTodo-light{
     margin-left:1em;
@@ -59,7 +59,7 @@
 }
 .btnTodo-dark{
     margin-left:1em;
-    background-color: darkblue;
+    background-color: lightsalmon;
     color:white;
 }
 .todosList{
@@ -83,7 +83,7 @@
     border: 1px solid black;
     width: 30%;
     display: flex;
-    background-color: darkblue;
+    background-color: lightsalmon;
     height: fit-content;
     color: white;
     padding: 1%;
@@ -113,7 +113,7 @@
     text-align: center;
     justify-content: center;
     margin-left: 35%;
-    background-color: darkblue;
+    background-color: lightsalmon;
     color: white;
 }
 
