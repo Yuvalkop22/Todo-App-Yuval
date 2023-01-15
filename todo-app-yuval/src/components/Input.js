@@ -1,13 +1,15 @@
 import React from 'react'
 import '../App.css';
+import { v4 as uuidv4 } from 'uuid';
 export default function Input(props) {
     const AddToDo = () => {
         if (props.todoValue <= 0)
             return;
+        const id = uuidv4();
         const newToDo = {
             content: props.todoValue,
             isComplete: false,
-            id: props.todos.length+1
+            id: id
         };
         props.setTodos([...props.todos,newToDo]);
         props.setActiveTodos(props.activeTodos+1);

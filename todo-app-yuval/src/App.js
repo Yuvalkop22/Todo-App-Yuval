@@ -13,9 +13,13 @@ const App = () => {
     if (mode === 'light'){
       setMode('dark')
       setBtnModeTitle('Light Mode')
+      let bodyBackground = document.querySelector("body");
+      bodyBackground.setAttribute('style','background-color: darkblue');
     }else{
       setMode('light')
       setBtnModeTitle('Dark Mode')
+      let bodyBackground = document.querySelector("body");
+      bodyBackground.setAttribute('style','background-color: white');
     }
   }
   return(
